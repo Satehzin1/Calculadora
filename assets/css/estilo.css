@@ -1,0 +1,146 @@
+/* ========== RESET GERAL ========== */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background: url('../images/fundo_bg.gif') no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+
+.fundo h1{
+    color: #FF7C4A;
+    font-size: 2.5rem;
+    text-shadow: 3px 3px #D7636C;
+    margin-bottom: 5rem;
+    
+}
+
+.calculadora table{
+    display: flex;
+    justify-content: center;
+}
+
+.calculadora{
+    background-color: #739b9d4d;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px #DC5C6B;
+}
+
+.calculadora h2{
+    color: #7697A2;
+    text-align: center;
+    text-shadow: 1px 1px 2px #fff;
+}
+
+#resultado{
+    background-color: #fff;
+    height: 2.5rem;
+    text-align: right;
+    padding: 5px;
+    font-size: 1.8rem;
+    border-radius: 5px;
+    margin: 1rem auto;
+    width: 215px;
+    overflow: hidden;
+}
+
+button{
+    width: 3rem;
+    height: 3rem;
+    cursor: pointer;
+    font-weight: 600;
+    margin: 3px;
+    font-size: 20px;
+    box-shadow: 3px 3px #FFBFCE;
+    border-radius: 5px;
+}
+
+button:hover{
+    background-color: #6797ca;
+    transition: 0.2s;
+}
+
+button:active{
+    font-size: 19px;
+    box-shadow: 1px 1px #FFBFCE;
+}
+
+td[rowspan="2"] button{
+    background: #648EBF;
+    color: #fff;
+    height: 104px;
+}
+
+td[rowspan="2"] button:hover{
+    color: #16202b;
+    background-color: rgb(243, 114, 55);
+    transition: 0.2s;
+}
+
+td[colspan="2"] button{
+    width: 104px;
+}
+
+@media (max-width: 500px) {
+    
+    .calculadora{
+        width: 90vw;
+        height: 60%;
+    }
+
+    h1{
+        top: 2% !important;
+        left: -0.8%;
+    }
+
+    .calculadora h2{
+        text-align: center;
+        text-shadow: 1px 1px 2px ;
+        font-size: 2.5rem;
+   }
+
+   #resultado{
+        height: 3rem;
+        padding: 0.5rem;
+        font-size: 2rem;
+        width: 300px;
+   }
+
+   table{
+        margin: 0 auto;
+   }
+   
+   button{
+        width: 4rem;
+        height: 4rem;
+        font-size: 20px;
+        margin: 4px;
+   }
+
+    td[rowspan="2"] button{
+        background: #648EBF;
+        color: #fff;
+        height: 136px;
+    }
+
+    td[colspan="2"] button{
+        width: 138px;
+    }
+    
+}
+
+
+
+
